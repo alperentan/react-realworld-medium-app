@@ -1,4 +1,4 @@
-# react-realword-medium-app
+# React Realworld Medium App
 
 A "medium.com" like website project
 
