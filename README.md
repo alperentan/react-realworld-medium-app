@@ -3,7 +3,9 @@
 A website project built with React using create-react-app
 
 To run this front-end project locally:
+
 `npm install` to install dependencies
+
 `npm start` to start project on local server
 
 
