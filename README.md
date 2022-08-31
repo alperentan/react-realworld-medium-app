@@ -1,6 +1,8 @@
 # react-realword-medium-app
 
-A website project built with React using create-react-app
+A "medium.com" like website project
+
+Built with React using create-react-app
 
 To run this front-end project locally:
 
