@@ -1,5 +1,8 @@
 # react-realword-medium-app
 
-Medium-like website built with React
+A website
 
 [**API documentation is here**](https://api.realworld.io/api-docs/)<br>
+
+
+[**You can also view the API spec here **](https://github.com/gothinkster/realworld/tree/main/api)<br>
