@@ -10,7 +10,7 @@ const AuthHeader = () => {
   useEffect(() => {
     dispatch(effects.getUser(token));
   }, [token, dispatch]);
-  //mevcut kullanici bilgisini aliyoruz
+
   return res.user ? (
     <>
       <nav className="parent-navbar">

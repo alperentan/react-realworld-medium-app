@@ -11,6 +11,7 @@ const CommentAreaInput = (data) => {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
+    //article comment'lari api'den cektigimiz fonksiyon
     async function getComments() {
       return fetch(`https://api.realworld.io/api/articles/${id}/comments`, {
         method: "GET",
@@ -29,6 +30,7 @@ const CommentAreaInput = (data) => {
     commentResponse();
   }, [id, token, comments]);
 
+  //olusturulan comment'i api'ye gonderme fonksiyonu
   async function createComment(state, credentials) {
     return fetch(`https://api.realworld.io/api/articles/${id}/comments`, {
       method: `${state}`,
