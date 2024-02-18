@@ -19,7 +19,7 @@ To run this front-end project locally:
 
 
 
-[**API documentation is here**](https://api.realworld.io/api-docs/)<br>
+[**API documentation is here**](https://realworld-docs.netlify.app/docs/specs/frontend-specs/swagger/)<br>
 
 
 [**You can also view the API spec here**](https://github.com/gothinkster/realworld/tree/main/api)<br>
