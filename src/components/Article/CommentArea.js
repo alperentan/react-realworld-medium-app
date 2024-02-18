@@ -10,9 +10,7 @@ const CommentAreaInput = (data) => {
   const [userComment, setuserComment] = useState("");
   const [comments, setComments] = useState([]);
 
-  useEffect(() => {
-    console.log("test");
-  }, [id, token]);
+  useEffect(() => {}, [id, token]);
 
   //article comment'lari api'den cektigimiz fonksiyon
   async function getComments() {
