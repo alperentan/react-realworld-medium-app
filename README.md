@@ -8,7 +8,7 @@ Usage
 -------------
 You can preview this project via the following link:
 
-https://alperentan.github.io/react-realword-medium-app
+https://alperentan.github.io/react-realworld-medium-app
 
 To run this front-end project locally:
 
