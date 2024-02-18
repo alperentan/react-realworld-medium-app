@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-realworld-medium-app/static/css/main.420443f5.css",
-    "main.js": "/react-realworld-medium-app/static/js/main.9a6e85e0.js",
+    "main.js": "/react-realworld-medium-app/static/js/main.afec5ef1.js",
     "static/js/787.3035202f.chunk.js": "/react-realworld-medium-app/static/js/787.3035202f.chunk.js",
     "index.html": "/react-realworld-medium-app/index.html",
     "main.420443f5.css.map": "/react-realworld-medium-app/static/css/main.420443f5.css.map",
-    "main.9a6e85e0.js.map": "/react-realworld-medium-app/static/js/main.9a6e85e0.js.map",
+    "main.afec5ef1.js.map": "/react-realworld-medium-app/static/js/main.afec5ef1.js.map",
     "787.3035202f.chunk.js.map": "/react-realworld-medium-app/static/js/787.3035202f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.420443f5.css",
-    "static/js/main.9a6e85e0.js"
+    "static/js/main.afec5ef1.js"
   ]
 }
