@@ -11,25 +11,27 @@ const CommentAreaInput = (data) => {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    //article comment'lari api'den cektigimiz fonksiyon
-    async function getComments() {
-      return fetch(`https://api.realworld.io/api/articles/${id}/comments`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          authorization: `Token ${token}`,
-        },
-      }).then((data) => data.json());
-    }
-    const commentResponse = async () => {
-      const myrespon = await getComments();
-      console.log(myrespon);
-      if ("comments" in myrespon) {
-        setComments(myrespon.comments);
-      }
-    };
-    commentResponse();
+    console.log("test");
   }, [id, token]);
+
+  //article comment'lari api'den cektigimiz fonksiyon
+  async function getComments() {
+    return fetch(`https://api.realworld.io/api/articles/${id}/comments`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        authorization: `Token ${token}`,
+      },
+    }).then((data) => data.json());
+  }
+
+  const commentResponse = async () => {
+    const myrespon = await getComments();
+    if ("comments" in myrespon) {
+      setComments(myrespon.comments);
+    }
+  };
+  commentResponse();
 
   //olusturulan comment'i api'ye gonderme fonksiyonu
   async function createComment(state, credentials) {
