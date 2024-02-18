@@ -12,16 +12,16 @@ const HomeView = () => {
   );
   const [globalFeedClassName, setglobalFeedClassName] = useState("nav-item");
   //global feed articlelarini ceken api fonksiyonu
-  async function getGlobalArticles(ver) {
-    return fetch(`https://api.realworld.io/api/articles${ver}`, {
+  async function getGlobalArticles() {
+    return fetch(`https://api.realworld.io/api/articles`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
     }).then((data) => data.json());
   }
-  async function getGlobalArticlesToken(ver) {
-    return fetch(`https://api.realworld.io/api/articles${ver}`, {
+  async function getGlobalArticlesToken() {
+    return fetch(`https://api.realworld.io/api/articles`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -64,14 +64,14 @@ const HomeView = () => {
     //global article icin cagirilan fonksiyon, Gerome kullanicisinin articlelarini cekiyor(demo sitesinde boyle yapildigi icin yaptim)
     const response = async () => {
       if (token) {
-        const myrespon = await getGlobalArticlesToken("?author=Gerome");
+        const myrespon = await getGlobalArticlesToken();
         if ("articles" in myrespon) {
           setArticles(myrespon.articles);
         } else {
           console.log("error");
         }
       } else {
-        const myrespon = await getGlobalArticles("?author=Gerome");
+        const myrespon = await getGlobalArticles();
         if ("articles" in myrespon) {
           setArticles(myrespon.articles);
         } else {
