@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-realword-medium-app/static/css/main.420443f5.css",
-    "main.js": "/react-realword-medium-app/static/js/main.ec3ebc57.js",
+    "main.js": "/react-realword-medium-app/static/js/main.1a5d4138.js",
     "static/js/787.3035202f.chunk.js": "/react-realword-medium-app/static/js/787.3035202f.chunk.js",
     "index.html": "/react-realword-medium-app/index.html",
     "main.420443f5.css.map": "/react-realword-medium-app/static/css/main.420443f5.css.map",
-    "main.ec3ebc57.js.map": "/react-realword-medium-app/static/js/main.ec3ebc57.js.map",
+    "main.1a5d4138.js.map": "/react-realword-medium-app/static/js/main.1a5d4138.js.map",
     "787.3035202f.chunk.js.map": "/react-realword-medium-app/static/js/787.3035202f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.420443f5.css",
-    "static/js/main.ec3ebc57.js"
+    "static/js/main.1a5d4138.js"
   ]
 }
