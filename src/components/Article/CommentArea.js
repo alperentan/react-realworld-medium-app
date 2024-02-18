@@ -23,12 +23,13 @@ const CommentAreaInput = (data) => {
     }
     const commentResponse = async () => {
       const myrespon = await getComments();
+      console.log(myrespon);
       if ("comments" in myrespon) {
         setComments(myrespon.comments);
       }
     };
     commentResponse();
-  }, [id, token, comments]);
+  }, [id, token]);
 
   //olusturulan comment'i api'ye gonderme fonksiyonu
   async function createComment(state, credentials) {
