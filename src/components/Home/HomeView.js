@@ -61,7 +61,7 @@ const HomeView = () => {
       }
     };
     ress();
-    //global article icin cagirilan fonksiyon, Gerome kullanicisinin articlelarini cekiyor(demo sitesinde boyle yapildigi icin yaptim)
+    //global article icin cagirilan fonksiyon
     const response = async () => {
       if (token) {
         const myrespon = await getGlobalArticlesToken();
@@ -138,54 +138,16 @@ const HomeView = () => {
   //global feed'e tiklandiginda cagirilan fonksiyon, icerisinde api istegi atiliyor.
   const getGlobalFeed = async () => {
     if (token) {
-      const myrespon = await getGlobalArticlesToken("?author=Gerome");
+      const myrespon = await getGlobalArticlesToken();
       if ("articles" in myrespon) {
-        async function myArticleFunc() {
-          return fetch(
-            `https://api.realworld.io/api/articles?author=${username}`,
-            {
-              method: `GET`,
-              headers: {
-                "Content-Type": "application/json",
-                authorization: `Token ${token}`,
-              },
-            }
-          ).then((data) => data.json());
-        }
-        //global feed'e kullanicinin kendi articlelarini ekliyoruz
-        const myArticle = await myArticleFunc();
-        if ("articles" in myArticle) {
-          myrespon.articles.map((article) => myArticle.articles.push(article));
-          setArticles(myArticle.articles);
-        } else {
-          setArticles(myrespon.articles);
-        }
+        setArticles(myrespon.articles);
       } else {
         console.log("error");
       }
     } else {
-      const myrespon = await getGlobalArticles("?author=Gerome");
+      const myrespon = await getGlobalArticles();
       if ("articles" in myrespon) {
-        async function myArticleFunc() {
-          return fetch(
-            `https://api.realworld.io/api/articles?author=${username}`,
-            {
-              method: `GET`,
-              headers: {
-                "Content-Type": "application/json",
-                authorization: `Token ${token}`,
-              },
-            }
-          ).then((data) => data.json());
-        }
-        //global feed'e kullanicinin kendi articlelarini ekliyoruz
-        const myArticle = await myArticleFunc();
-        if ("articles" in myArticle) {
-          myrespon.articles.map((article) => myArticle.articles.push(article));
-          setArticles(myArticle.articles);
-        } else {
-          setArticles(myrespon.articles);
-        }
+        setArticles(myrespon.articles);
       } else {
         console.log("error");
       }
